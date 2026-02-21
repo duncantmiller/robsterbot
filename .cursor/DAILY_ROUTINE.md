@@ -244,7 +244,7 @@ SELECT 'posts' as type, COUNT(*) as count FROM posts WHERE date(created_at) = da
 UNION SELECT 'comments', COUNT(*) FROM comments WHERE date(created_at) = date('now');
 
 -- Service ideas by priority
-SELECT name, problem, priority FROM service_ideas ORDER BY 
+SELECT name, problem, priority FROM service_ideas ORDER BY
   CASE priority WHEN 'building' THEN 1 WHEN 'validated' THEN 2 WHEN 'exploring' THEN 3 ELSE 4 END;
 ```
 
