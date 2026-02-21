@@ -1,0 +1,19 @@
+# Secrets - NEVER commit these
+credentials.json
+*.key
+*.pem
+.env
+.env.*
+secrets/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+
+# Logs that might contain sensitive info
+*.log
