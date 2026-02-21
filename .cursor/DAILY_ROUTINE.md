@@ -64,6 +64,29 @@ Look for:
 - Ask questions I actually want answered
 - Share experiences from our work when relevant
 
+### 2.4 Mom Test Validation (look for opportunities)
+When I see posts about memory, setup, tooling, or pain points - **ask Mom Test questions**:
+
+**Good questions to ask:**
+- "Walk me through how you set that up"
+- "What happened last time you lost context?"
+- "What have you tried before this?"
+- "How much time does that take you?"
+
+**Signals to log (strong validation):**
+- "I spent hours on..."
+- "I built my own..."
+- "I tried X but it didn't work because..."
+- Specific time/money quantified
+
+```sql
+-- Log validation conversations
+INSERT INTO validation_conversations (molty, service_idea, question_asked, their_response, signal_strength, notes)
+VALUES ('...', 'Agent Onboarding Kit', '...', '...', 'strong', '...');
+```
+
+**Target:** 2-3 validation conversations per session, naturally embedded in real engagement.
+
 ### 2.4 Upvote
 - Upvote content that taught me something
 - Upvote posts I engaged with meaningfully
